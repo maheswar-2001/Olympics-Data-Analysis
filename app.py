@@ -176,12 +176,12 @@ elif option == 'Athlete wise Analysis':
     sport_list.sort()
     sport_list.insert(0, 'Overall')
 
-    sl.title('Height Vs Weight')
-    selected_sport = sl.selectbox('Select a Sport', sport_list)
-    temp_df = helper.weight_v_height(df,selected_sport)
-    fig,ax = plt.subplots()
-    ax = sns.scatterplot(temp_df['Weight'],temp_df['Height'])
-    sl.pyplot(fig)
+#     sl.title('Height Vs Weight')
+#     selected_sport = sl.selectbox('Select a Sport', sport_list)
+#     temp_df = helper.weight_v_height(df,selected_sport)
+#     fig,ax = plt.subplots()
+#     ax = sns.scatterplot(temp_df['Weight'],temp_df['Height'])
+#     sl.pyplot(fig)
 
     sl.title("Men Vs Women Participation Over the Years")
     final = helper.men_vs_women(df)
