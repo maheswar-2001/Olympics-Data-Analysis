@@ -55,7 +55,7 @@ def fetch_data(df, year, country):
 
 def data_time(df,col):
 
-    nation = df.drop_duplicates(['Year', col])['Year'].value_counts().reset_index().sort_values('index')
+    nation = df.drop_duplicates(['Year', col])['Year'].value_counts().reset_index()
 
     nation.rename(columns={'index': 'Edition', 'Year': col}, inplace=True)
 
